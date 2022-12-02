@@ -57,6 +57,11 @@ for (let i = 0; i < 5; i++) {
 
 console.log('-------- Užd. Nr. 5 -----------');
 // 5. Naudojant while ciklą, spausdinti atsitiktinius skaičius nuo 1 iki 10. Paskutinis atspausdintas skaičius turi būti 5.(7 taškai)
+let numb = 0;
+while (numb !== 5) {
+    numb = Math.floor((Math.random() * 10) + 1);
+    console.log(numb);
+}
 
 
 
