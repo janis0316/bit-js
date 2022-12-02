@@ -12,7 +12,7 @@
 // 10. Parašyti funkciją telefonoNumeris.Funkcija turi priimti vieną kintamąjį - masyvą.Masyvo elementai - skaičiai, ilgis - 10. Funkcija turi grąžinti telefono numerį tokiu formatu -
 //     "(XXX) XXX-XXXX". (10 taškų)
 
-console.log('-------- Užd. Nr. 1------------')
+console.log('-------- Užd. Nr. 1------------');
 // 1. Palyginti du skaičius a ir b.Išvesti į konsolę, kuris didesnis arba jie lygūs. (4 taškai)
 const a = 4;
 const b = 5;
@@ -26,7 +26,7 @@ if (a === b) {
 
 
 
-console.log('-------- Užd. Nr. 2 -----------')
+console.log('-------- Užd. Nr. 2 -----------');
 // 2. Naudojant for ciklą, išvesti į konsolę skaičius nuo 1 iki 10.(5 taškai)
 for (let i = 1; i <= 10; i++) {
     console.log(i);
@@ -34,7 +34,7 @@ for (let i = 1; i <= 10; i++) {
 
 
 
-console.log('-------- Užd. Nr. 3 -----------')
+console.log('-------- Užd. Nr. 3 -----------');
 // 3. Naudojant for ciklą, išvesti į konsolę skaičius nuo 0, 2, 4, 6, 8, 10.(5 taškai)
 for (let i = 0; i <= 10; i = i + 2) {
     console.log(i);
@@ -42,7 +42,7 @@ for (let i = 0; i <= 10; i = i + 2) {
 
 
 
-console.log('-------- Užd. Nr. 4 -----------')
+console.log('-------- Užd. Nr. 4 -----------');
 // 4. Naudojant for ciklą, sugeneruoti penkis atsitiktinius skaičius nuo 1 iki 10. Išvesti juos konsolėje. (5 taškai)
 function rand(min, max) {
     min = Math.ceil(min);
@@ -55,12 +55,12 @@ for (let i = 0; i < 5; i++) {
 
 
 
-console.log('-------- Užd. Nr. 5 -----------')
+console.log('-------- Užd. Nr. 5 -----------');
 // 5. Naudojant while ciklą, spausdinti atsitiktinius skaičius nuo 1 iki 10. Paskutinis atspausdintas skaičius turi būti 5.(7 taškai)
 
 
 
-console.log('-------- Užd. Nr. 6 -----------')
+console.log('-------- Užd. Nr. 6 -----------');
 // 6. Sukurti masyvą, kurio ilgis būtų nuo 20 iki 30, o reikšmės būtų skaičiai nuo 10 iki 30. Surasti didžiausią
 // masyvo reikšmę, NENAUDOJANT sort() bei Math.max() funkcijų. (7 taškai)
 let masyvas = [];
@@ -76,7 +76,7 @@ console.log(didz);
 
 
 
-console.log('-------- Užd. Nr. 7 -----------')
+console.log('-------- Užd. Nr. 7 -----------');
 // 7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai)
 let raidziuMasyvas = [];
 let kiekA = 0;
@@ -107,7 +107,7 @@ console.log('D raidės: ' + kiekD);
 
 
 
-console.log('-------- Užd. Nr. 8 -----------')
+console.log('-------- Užd. Nr. 8 -----------');
 // 8. Parašyti funkciją - lygineSuma.Funkcijos parametrai - du kintamieji.Testų reikalavimai - abu kitamieji turi būti
 // arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
 // Jei kintamieji skaičiai, grąžinti skaičių sumą, jei kintamieji masyvai - grąžinti masyvų ilgių sumą.Jei abu
@@ -135,12 +135,12 @@ console.log(lygineSuma([1, 2, 3], [1, 2]));
 
 
 
-console.log('-------- Užd. Nr. 9 -----------')
+console.log('-------- Užd. Nr. 9 -----------');
 // 9. Parašyti funkciją pirminisSkaicius.Funkcija turi vieną kintamąjį.Turi būti patikrinimas, kad kintamasis
 // yra skaičius.Funkcija turi grąžinti ar pateiktas skaičius yra pirminis(pirminis skaičius yra tas,
 // kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.)(10 taškų)
-let d = 0;
 function pirminisSkaicius(a) {
+    let d = 0;
     if (typeof a === 'number') {
         for (let i = 1; i <= a; i++) {
             if (Number.isInteger(a / i)) {
@@ -157,4 +157,9 @@ function pirminisSkaicius(a) {
     }
 }
 console.log(pirminisSkaicius(7));
+
+
+
+console.log('-------- Užd. Nr. 10 -----------');
+
 
