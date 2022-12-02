@@ -72,8 +72,8 @@ let kiekB = 0;
 let kiekC = 0;
 let kiekD = 0;
 function randLetter() {
-    const raides = 'ABCD'
-    return raides[Math.floor(Math.random() * raides.length)]
+    const raides = 'ABCD';
+    return raides[Math.floor(Math.random() * raides.length)];
 }
 for (let i = 0; i < 100; i++) {
     raidziuMasyvas[i] = randLetter();
@@ -98,4 +98,24 @@ console.log('-------- Užd. Nr. 8 -----------')
 // arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
 // Jei kintamieji skaičiai, grąžinti skaičių sumą, jei kintamieji masyvai - grąžinti masyvų ilgių sumą.Jei abu
 // kintamieji skaičiai arba masyvai, bet suma nelyginė - grąžinti tekstą, kad suma nelyginė. (10 taškų)
+function lygineSuma(a, b) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        let skaiciuSuma = a + b;
+        if (skaiciuSuma % 2 === 0) {
+            return skaiciuSuma;
+        } else {
+            return 'Skaičių suma nelyginė';
+        }
+    } else if (a.constructor === Array && b.constructor === Array) {
+        let masyvuSuma = a.length + b.length;
+        if (masyvuSuma % 2 === 0) {
+            return masyvuSuma;
+        } else {
+            return 'Masyvų suma nelyginė';
+        }
+    } else {
+        return 'Abu kintamieji turi būti arba skaičiai arba masyvai';
+    }
+}
 
+console.log(lygineSuma([1, 2, 3], [1, 2]));
