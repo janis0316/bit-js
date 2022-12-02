@@ -77,7 +77,7 @@ for (let i = 0; i < rand(20, 30); i++) {
     }
 }
 console.log(masyvas);
-console.log(didz);
+console.log('Didžiausia reikšmė: ' + didz);
 
 
 
