@@ -24,17 +24,23 @@ if (a === b) {
     console.log('b daugiau už a');
 }
 
+
+
 console.log('-------- Užd. Nr. 2 -----------')
 // 2. Naudojant for ciklą, išvesti į konsolę skaičius nuo 1 iki 10.(5 taškai)
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
+
+
 console.log('-------- Užd. Nr. 3 -----------')
 // 3. Naudojant for ciklą, išvesti į konsolę skaičius nuo 0, 2, 4, 6, 8, 10.(5 taškai)
 for (let i = 0; i <= 10; i = i + 2) {
     console.log(i);
 }
+
+
 
 console.log('-------- Užd. Nr. 4 -----------')
 // 4. Naudojant for ciklą, sugeneruoti penkis atsitiktinius skaičius nuo 1 iki 10. Išvesti juos konsolėje. (5 taškai)
@@ -47,8 +53,12 @@ for (let i = 0; i < 5; i++) {
     console.log(rand(1, 10));
 }
 
+
+
 console.log('-------- Užd. Nr. 5 -----------')
 // 5. Naudojant while ciklą, spausdinti atsitiktinius skaičius nuo 1 iki 10. Paskutinis atspausdintas skaičius turi būti 5.(7 taškai)
+
+
 
 console.log('-------- Užd. Nr. 6 -----------')
 // 6. Sukurti masyvą, kurio ilgis būtų nuo 20 iki 30, o reikšmės būtų skaičiai nuo 10 iki 30. Surasti didžiausią
@@ -63,6 +73,8 @@ for (let i = 0; i < rand(20, 30); i++) {
 }
 console.log(masyvas);
 console.log(didz);
+
+
 
 console.log('-------- Užd. Nr. 7 -----------')
 // 7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai)
@@ -93,6 +105,8 @@ console.log('B raidės: ' + kiekB);
 console.log('C raidės: ' + kiekC);
 console.log('D raidės: ' + kiekD);
 
+
+
 console.log('-------- Užd. Nr. 8 -----------')
 // 8. Parašyti funkciją - lygineSuma.Funkcijos parametrai - du kintamieji.Testų reikalavimai - abu kitamieji turi būti
 // arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
@@ -117,5 +131,30 @@ function lygineSuma(a, b) {
         return 'Abu kintamieji turi būti arba skaičiai arba masyvai';
     }
 }
-
 console.log(lygineSuma([1, 2, 3], [1, 2]));
+
+
+
+console.log('-------- Užd. Nr. 9 -----------')
+// 9. Parašyti funkciją pirminisSkaicius.Funkcija turi vieną kintamąjį.Turi būti patikrinimas, kad kintamasis
+// yra skaičius.Funkcija turi grąžinti ar pateiktas skaičius yra pirminis(pirminis skaičius yra tas,
+// kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.)(10 taškų)
+let d = 0;
+function pirminisSkaicius(a) {
+    if (typeof a === 'number' && a >= 1) {
+        for (let i = 1; i <= a; i++) {
+            if (Number.isInteger(a / i)) {
+                d++;
+            }
+        }
+        if (d <= 2) {
+            return 'Skaičius yra pirminis';
+        } else {
+            return 'Skaičius nėra pirminis';
+        }
+    } else {
+        return 'Kintamasis turi būti teigiamas skaičius';
+    }
+}
+console.log(pirminisSkaicius(7));
+
