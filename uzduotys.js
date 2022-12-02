@@ -13,8 +13,6 @@
 //     "(XXX) XXX-XXXX". (10 taškų)
 
 console.log('-------- Užd. Nr. 1------------')
-
-// Užd. Nr. 1:
 // 1. Palyginti du skaičius a ir b.Išvesti į konsolę, kuris didesnis arba jie lygūs. (4 taškai)
 const a = 4;
 const b = 5;
@@ -27,24 +25,18 @@ if (a === b) {
 }
 
 console.log('-------- Užd. Nr. 2 -----------')
-
-// Užd. Nr. 2:
 // 2. Naudojant for ciklą, išvesti į konsolę skaičius nuo 1 iki 10.(5 taškai)
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
 console.log('-------- Užd. Nr. 3 -----------')
-
-// Užd. Nr. 3:
 // 3. Naudojant for ciklą, išvesti į konsolę skaičius nuo 0, 2, 4, 6, 8, 10.(5 taškai)
 for (let i = 0; i <= 10; i = i + 2) {
     console.log(i);
 }
 
 console.log('-------- Užd. Nr. 4 -----------')
-
-// Užd. Nr. 4:
 // 4. Naudojant for ciklą, sugeneruoti penkis atsitiktinius skaičius nuo 1 iki 10. Išvesti juos konsolėje. (5 taškai)
 function rand(min, max) {
     min = Math.ceil(min);
@@ -54,5 +46,25 @@ function rand(min, max) {
 for (let i = 0; i < 5; i++) {
     console.log(rand(1, 10));
 }
+
+console.log('-------- Užd. Nr. 5 -----------')
+// 5. Naudojant while ciklą, spausdinti atsitiktinius skaičius nuo 1 iki 10. Paskutinis atspausdintas skaičius turi būti 5.(7 taškai)
+
+console.log('-------- Užd. Nr. 6 -----------')
+// 6. Sukurti masyvą, kurio ilgis būtų nuo 20 iki 30, o reikšmės būtų skaičiai nuo 10 iki 30. Surasti didžiausią
+// masyvo reikšmę, NENAUDOJANT sort() bei Math.max() funkcijų. (7 taškai)
+let masyvas = [];
+let didz = 0;
+for (let i = 0; i < rand(20, 30); i++) {
+    masyvas[i] = rand(10, 30);
+    if (didz <= masyvas[i]) {
+        didz = masyvas[i];
+    }
+}
+console.log(masyvas);
+console.log(didz);
+
+console.log('-------- Užd. Nr. 7 -----------')
+// 7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai)
 
 
