@@ -141,19 +141,19 @@ console.log('-------- Užd. Nr. 9 -----------')
 // kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.)(10 taškų)
 let d = 0;
 function pirminisSkaicius(a) {
-    if (typeof a === 'number' && a >= 1) {
+    if (typeof a === 'number') {
         for (let i = 1; i <= a; i++) {
             if (Number.isInteger(a / i)) {
                 d++;
             }
         }
-        if (d <= 2) {
+        if (d === 2) {
             return 'Skaičius yra pirminis';
         } else {
             return 'Skaičius nėra pirminis';
         }
     } else {
-        return 'Kintamasis turi būti teigiamas skaičius';
+        return 'Kintamasis turi būti skaičius';
     }
 }
 console.log(pirminisSkaicius(7));
