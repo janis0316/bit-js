@@ -161,5 +161,15 @@ console.log(pirminisSkaicius(7));
 
 
 console.log('-------- Užd. Nr. 10 -----------');
-
-
+// 10. Parašyti funkciją telefonoNumeris.Funkcija turi priimti vieną kintamąjį - masyvą.
+// Masyvo elementai - skaičiai, ilgis - 10. Funkcija turi grąžinti telefono numerį tokiu formatu -
+// "(XXX) XXX-XXXX". (10 taškų)
+function telefonoNumeris(f) {
+    if (f.constructor === Array) {
+        return '(' + f[0] + f[1] + f[2] + ') ' + f[3] + f[4] + f[5] + '-' + f[6] + f[7] + f[8] + f[9];
+    } else {
+        return 'Kintamasis turi būti masyvas';
+    }
+}
+let g = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(telefonoNumeris(g));
