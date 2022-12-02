@@ -66,5 +66,36 @@ console.log(didz);
 
 console.log('-------- Užd. Nr. 7 -----------')
 // 7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai)
+let raidziuMasyvas = [];
+let kiekA = 0;
+let kiekB = 0;
+let kiekC = 0;
+let kiekD = 0;
+function randLetter() {
+    const raides = 'ABCD'
+    return raides[Math.floor(Math.random() * raides.length)]
+}
+for (let i = 0; i < 100; i++) {
+    raidziuMasyvas[i] = randLetter();
+    if (raidziuMasyvas[i] === 'A') {
+        kiekA++;
+    } else if (raidziuMasyvas[i] === 'B') {
+        kiekB++;
+    } else if (raidziuMasyvas[i] === 'C') {
+        kiekC++;
+    } else {
+        kiekD++;
+    }
+}
+console.log(raidziuMasyvas);
+console.log('A raidės: ' + kiekA);
+console.log('B raidės: ' + kiekB);
+console.log('C raidės: ' + kiekC);
+console.log('D raidės: ' + kiekD);
 
+console.log('-------- Užd. Nr. 8 -----------')
+// 8. Parašyti funkciją - lygineSuma.Funkcijos parametrai - du kintamieji.Testų reikalavimai - abu kitamieji turi būti
+// arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
+// Jei kintamieji skaičiai, grąžinti skaičių sumą, jei kintamieji masyvai - grąžinti masyvų ilgių sumą.Jei abu
+// kintamieji skaičiai arba masyvai, bet suma nelyginė - grąžinti tekstą, kad suma nelyginė. (10 taškų)
 
